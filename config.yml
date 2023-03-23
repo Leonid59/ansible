@@ -23,6 +23,7 @@
       apt_key: 
         url: https://download.docker.com/linux/ubuntu/gpg
         state: present
+        keyring: /etc/apt/keyrings/docker.gpg
 
     - name: Установка стабильного репозитория Docker
       apt_repository:
