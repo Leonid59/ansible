@@ -1,6 +1,16 @@
 ---
-- name: All configs
-  hosts: cluster
+- name: Deploy
+  hosts: deploy
   roles:
   - preconfig
-  - deploy
+    #  - deploy
+
+- name: Manager
+  hosts: manger
+  roles:
+  - preconfig
+
+- name: Worker
+  hosts: worker
+  roles:
+  - preconfig

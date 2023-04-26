@@ -1,2 +1,2 @@
-[cluster]
+[deploy]
 127.0.0.1 ansible_user=leonid ansible_port=2222
