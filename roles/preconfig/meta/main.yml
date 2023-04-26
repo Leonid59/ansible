@@ -1,6 +1,12 @@
-argument_specs:
-  main:
-     short_description: Настройка серверов для работы с Docker
-     author: Leonid
-dependencies:
-  - role: deploy
+galaxy_info:
+  role_name: preconfig
+  description: Настройка серверов для работы с Docker
+  author: Leonid
+  license: MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+          # dependencies:
+          #   - role: deploy
