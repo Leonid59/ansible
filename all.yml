@@ -2,7 +2,12 @@
 - name: Deploy
   hosts: deploy
   roles:
-  - preconfig
+  - role: preconfig
+    tags: preconfig
+  - role: deploy
+    test: 0
+    tags: deploy
+    #- preconfig
     #  - deploy
 
 - name: Manager
